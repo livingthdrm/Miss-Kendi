@@ -1,0 +1,460 @@
+/* --------------- COLOR PALLETE --------------------------- */
+
+
+/*Icy Blues and Grays
+
+#F1F1F2;
+#BCBABE;
+#A1D6E2;
+#1995AD;
+*/
+
+
+/* -----------------------------------------------------------*/
+
+
+/* BASIC SETUP */
+
+
+/*------------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Knewave');
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #f1f1f2;
+    color: #000;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    height: 100%;
+    text-rendering: optimizeLegibility;
+}
+
+
+/* -----------------------------------------------------------*/
+
+
+/* REUSABLE COMPONENTS */
+
+
+/*------------------------------------------------------------*/
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Droid Serif', serif;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #1995ad;
+    font-size: 240%;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+h3 {
+    font-size: 110%;
+    margin-bottom: 15px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+h3:before {
+    display: block;
+    height: 2px;
+    background-color: #d4af37;
+    content: " ";
+    width: 100px;
+    margin: 30px auto;
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+}
+
+section .row{
+    margin: 0 5%;
+}
+
+
+/*--------------BUTTONS-----------------*/
+
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    padding: 10px 5px 10px 5px;
+    font-weight: 500;
+    text-decoration: none;
+    margin-top: 20px;
+    color: #1995ad;
+    -webkit-transition: border 0.2s, color 0.2s;
+    transition: border 0.2s, color 0.2s;
+}
+
+.btn:hover,
+.btn:active {
+    border: 1px solid rgb(14, 15, 15);
+    color: #000;
+}
+
+.read-more {
+    text-align: center;
+}
+
+
+/*--------------SECTION ABOUT-----------------*/
+
+.section-about img {
+    opacity: 0.8;
+    width: 60%;
+    height: 500px;
+    margin: 0 20%;
+    -webkit-transition: opacity 2s;
+    transition: opacity 2s;
+}
+
+.section-about img:hover,
+.section-about img:active {
+    opacity: 1;
+    border-color: #000;
+}
+
+.content {
+    margin: 5% 20%;
+    width: 60%;
+    line-height: 145%;
+    letter-spacing: 20%;
+    text-align: center;
+}
+
+.section-about span {
+    font-family: 'Knewave', cursive;
+}
+
+
+/* -----------------------------------------------------------*/
+
+
+/* HEADER */
+
+
+/* -----------------------------------------------------------*/
+
+header {
+    /*background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/3.jpg);*/
+    background-size: cover;
+    background-position: center;
+    background-origin: content-box;
+    height: 20vh;
+    background-attachment: fixed;
+}
+
+
+/* ------------------- NAVIGATION --------------------*/
+
+.main-nav {
+    text-align: center;
+    list-style: none;
+    margin: 30px 0 30px 0;
+    background-color: transparent;
+}
+
+.main-nav li {
+    display: inline-block;
+    padding-right: 20px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    color: #000000;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    color: #bcbabe;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #1995ad;
+}
+
+/* STICKY NAVIGATION */
+
+.sticky {
+    position: fixed;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.98);
+    z-index: 9999;
+    margin: 0;
+}
+
+.sticky .main-nav{
+    margin: 15px 0;
+    
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+    padding: 10px 0;
+    color: #000000; 
+}
+
+.sticky .main-nav li a:hover,
+.sticky .main-nav li a:active {
+    color: #909090; 
+}
+
+
+/* -----------------SOCIAL ICONS ---------------------*/
+
+.social-links {
+    padding: 20px 0;
+    text-align: center;
+    margin: 30px 0;
+    list-style: none;
+}
+
+.social-links li {
+    display: inline-block;
+    text-align: center;
+    width: 25px;
+    line-height: 120%;
+    vertical-align: middle;
+}
+
+.social-links li:last-child {
+    margin-right: 20px;
+}
+
+.social-links li a:link,
+.social-links li a:visited {
+    color: #000;
+}
+
+.social-links li a:hover,
+.social-links li a:active {
+    border-bottom: none;
+}
+
+.ion-social-facebook,
+.ion-social-twitter,
+.ion-social-googleplus,
+.ion-social-instagram,
+.ion-social-snapchat,
+.ion-social-pinterest,
+.ion-social-youtube {
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+}
+
+.ion-social-facebook:hover {
+    color: #3b5998;
+}
+
+.ion-social-twitter:hover {
+    color: #55acee;
+}
+
+.ion-social-googleplus:hover {
+    color: #dd4b39;
+}
+
+.ion-social-instagram:hover {
+    color: #fbad50;
+}
+
+.ion-social-snapchat:hover {
+    color: #fffc00;
+}
+
+.ion-social-pinterest:hover {
+    color: #cb2027;
+}
+
+.ion-social-youtube:hover {
+    color: #ff0000;
+}
+
+
+/* HEADER NAME --------------------------------------------*/
+
+header h1 {
+    font-family: 'Shojumaru', cursive;
+    font-size: 250%;
+    font-weight: 200;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+*:focus {
+    outline: none;
+}
+
+
+/* ------------------- INSTAGRAM FEED --------------------*/
+
+.section-instagram h3 {
+    color: #d4af37;
+}
+
+
+/* --------------------------------------------------------*/
+
+
+/* FORM */
+
+
+/* --------------------------------------------------------*/
+
+form {
+    margin: 0 auto;
+    width: 80%;
+}
+
+form div+div {
+    margin-top: 1em;
+}
+
+label {
+    display: inline-block;
+    text-align: justify;
+}
+
+input,
+textarea {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 5px 0;
+    border: none;
+    -webkit-transition: border 2s, background 2s;
+    transition: border 2s, background 2s;
+}
+
+input:hover,
+input:active,
+textarea:hover,
+textarea:active {
+    border-bottom: 1px solid #000;
+    background-color: transparent;
+}
+
+textarea {
+    font-weight: 100;
+    vertical-align: top;
+    height: 10em;
+}
+
+.button {
+    float: right;
+}
+
+button {
+    margin-top: 10px;
+    margin-left: .5em;
+    padding: 5px 10px;
+    background-color: #f1f1f2;
+    border: 1px solid #000;
+    -webkit-transition: background 0.2s, color 0.2s;
+    transition: background 0.2s, color 0.2s;
+}
+
+button:hover {
+    background-color: #505050;
+    color: #fff;
+}
+
+.button i {
+    padding-left: 5px;
+    font-size: 120%;
+}
+
+
+/* --------------------------------------------------------*/
+
+
+/* FOOTER */
+
+
+/* --------------------------------------------------------*/
+
+footer {
+    margin-top: 30px;
+    margin-bottom: 0;
+    width: 100%;
+    height: 200px;
+    background-color: #bcbcbc;
+}
+
+
+/* ------------------- FOOTER NAVIGATION --------------------*/
+
+.footer-nav {
+    text-align: center;
+    list-style: none;
+    margin: 30px 0 0 30px;
+}
+
+.footer-nav li {
+    display: inline-block;
+    padding-right: 20px;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited {
+    color: #000;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+    color: #f1f1f2;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #f1f1f2;
+    ;
+}
+
+footer .social-links {
+    float: none;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+footer p {
+    padding: 20px;
+    font-size: 70%;
+    color: #e6e6e6;
+    text-align: center;
+}
+
+footer .social-links li:last-child {
+    margin-right: 0;
+}

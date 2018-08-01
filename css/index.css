@@ -1,0 +1,114 @@
+https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css
+
+* {
+  box-sizing: border-box;
+}
+html, body {
+	background-color: #eaeded;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Avoid the IE 10-11 `min-height` bug. */
+  min-height: 800px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+hr {}
+
+main {min-width:100%;min-height: 100%;margin-bottom: -100px;}
+main .navigation a:hover{color:#60d115;}
+
+#row1{
+  background-color: green;
+  min-height: 50px;
+  transition: all .3s;
+}
+
+.sticky{
+        width: 100%;
+        top: 0;
+        left:0;
+        position:fixed;
+}
+
+.navigation ul{
+  width: 100%
+  height: 25px;
+  line-height: 80px;
+  position: absolute;
+}
+
+.navigation ul a{
+  text-decoration: none;
+  color: #000000;
+}
+
+.navigation ul li {
+  list-style-type: none;
+  display: inline-block;
+  float: left;
+  font-family: 'Amatic SC', cursive;
+  font-size: 20px;
+  padding-right: 20px;
+}
+
+.heading img {
+  float: center;
+  width: 50px;
+  height: 50px;
+}
+
+.heading h1 {
+  color: #f0330a;;
+  height: 40px;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Fredericka the Great', cursive;
+}
+
+.jumbotron {
+  height: 1600px;
+}
+.social {position:relative;margin: auto;padding: 0;}
+.social ul {margin:20px;padding:10px;float: right;}
+.social ul li {list-style: none outside none;display: inline-block;}
+.social i {width: 25px;height: 25px;color: #000;background-color: transparent;font-size: 15px;text-align:center;padding-top: 5px;border-radius: 50%;-moz-border-radius: 50%;-webkit-border-radius: 50%;-o-border-radius: 50%;transition: all ease 0.3s;-moz-transition: all ease 0.3s;-webkit-transition: all ease 0.3s;-o-transition: all ease 0.3s;-ms-transition: all ease 0.3s;
+}
+.social i:hover {color: #FFF;text-decoration: none;transition: all ease 0.3s;-moz-transition: all ease 0.3s;-webkit-transition: all ease 0.3s;-o-transition: all ease 0.3s;-ms-transition: all ease 0.3s;
+}
+.social .fa-search:hover {background: #000000;}
+.social .fa-instagram:hover {background: #9b6954;}
+.social .fa-facebook:hover {background: #4060A5;}
+.social .fa-twitter:hover {background: #00ABE3;}
+.social .fa-google-plus:hover {background: #e64522;}
+.social .fa-pinterest-p:hover {background: #cb2027;}
+.social .fa-flickr:hover {background: #FF57AE;}
+.social .fa-snapchat-ghost:hover {background: #fffc00;}
+
+.footer {left:0px;bottom:0px;height:80px;width:100%;background:#e0e5e7;color: #000000;}
+.footer p{float: left;font-size: 15px;padding-top: 30px;width: 50%;font-style: italic;position: absolute;display: flex;justify-content: center;}
+.footer .social{float: left;}
+.footer .social i{background-color: transparent;color:#000000;}
+.footer p .fa-twitter:hover {color : #f0330a ;}
+
+/* IE 6 */
+* html .footer {
+  position:relative;top:expression((0-(footer.offsetHeight)+(document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight)+(ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop))+'px');}
+
